@@ -37,7 +37,7 @@ public class Main {
 
     public void test(){
         Add add = new Add();
-        add.setIntA(1);
+        add.getIntA();
         add.setIntB(2);
     }
 }
