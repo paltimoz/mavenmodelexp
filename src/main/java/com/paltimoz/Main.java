@@ -1,5 +1,6 @@
 package com.paltimoz;
 
+import com.paltimoz.soap.client.Add;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import org.codehaus.plexus.util.xml.Xpp3Dom;
@@ -32,5 +33,11 @@ public class Main {
         } finally {
             reader.close();
         }
+    }
+
+    public void test(){
+        Add add = new Add();
+        add.setIntA(1);
+        add.setIntB(2);
     }
 }
